@@ -1,0 +1,44 @@
+// August 03, 2019 (Saturday)
+// CIS152 - HTML & CSS - Lecture 01
+
+Notepad - text editor
+NotePad++ - code editor
+
+Modern Web design has three pillars:
+- HTML  Hypertext Markup Language   1989    Structure
+- CSS   Cascading Style Sheets      1996    Design
+- JS    JavaScript                  1995    Interactivity
+
+Two types of web developers:
+- Web Designer  - Graphics  $$
+- Web Developer - Coding    $$$$
+
+What do you need to make Websites (or apps)?
+- Code editor   - eg. NotePad++, sublimeText, Visual Studio Code
+- Web Browser   - eg. Firefox, Google Crome
+
+Recommendation when creating HTML files
+- no space (use dash (-), underscore (_))
+- keep the name lowercase ( eg. index.html )
+- keep a project in a folder
+
+How 'perfectly' do you have to type code?
+- HTML  - Forgiving
+- CSS   - More Strict
+- JS    - Very Strict!
+
+If you type code wrong you get 'errors', you must 'debug' your errors.
+You can get two types of errors:
+- Syntax errors - wrong typed the codes
+- Logic errors  - Semantic codes
+
+HTML Syntax
+Use elements to markup (opening tag and closing tag pairs)
+HTML may be broken up into multiple lines or not
+<tag>content</tag>
+
+<tag>
+    content
+</tag>
+
+tabs/spaces how you want
