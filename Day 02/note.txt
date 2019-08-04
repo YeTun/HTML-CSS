@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // August 04, 2019
+=======
+// August 4, 2019
+>>>>>>> 905385df57c6d85da6724845c72b4baae5397580
 // CIS152 - HTML & CSS - Lecture 02
 
 HTML Tags have a pair
