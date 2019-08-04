@@ -1,0 +1,33 @@
+// August 04, 2019
+// CIS152 - HTML & CSS - Lecture 02
+
+HTML Tags have a pair
+    <p> ..content.. </p>
+
+HTML Tags may have Attributes in opening tag
+    <p lang="en-us"> ..content.. </p>
+
+Attributes are used to refine/define/redefine a tag.
+    Name and Value pairs are used (Syntax).
+
+Syntax correct way to write the language
+    Syntax erros - easier
+    Logic errors - harder to figure out.
+        Requires more debugging and figuring out your failure point.
+
+Common debug software (tool) - Your Web Browser
+
+Zoom Tips:
+    WIN & + = full-screen zoom 
+    CTRL & + = Zoom In
+    CTRL & - = Zoom Out
+    CTRL & / = Restore Default Zoom
+
+How to turn off Auto-Complete in Notepad++
+    Settings menu > Preferences > Auto-Complete > turn off Enable Auto-Complete
+
+Pro Dev Tip:
+    Change your Theme to a Dark Theme (like Bespin/Blackbord/Ruby) to avoid eye fatigue
+
+How to Bold or Italicize
+    Ignore page 45 in the book. Use page 51!
