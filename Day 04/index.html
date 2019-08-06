@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>CIS152 - HTML & CSS</title>
+</head>
+<body>
+    <a href="http://pixlr" target="_blank" rel="noopener noreferrer">PIXLR</a>
+    <h1 id="top">Cookies Paradise</h1>
+
+    <h2>Recipes</h2>
+    <p><a href="#recCho">Chocolate Chip</a> |
+        <a href="#recSni">Snickerdoodle</a> |
+        <a href="#defs">Definitions</a>
+    </p>
+    
+    <h3 id="recCho">Chocolate Cookies</h3>
+    <h4>Ingredients</h4>
+    <ul>
+        <li>Eggs</li>
+        <li>Tuscan Butter</li>
+        <li>Florentine Flour</li>
+    </ul>
+    <h4>Method</h4>
+    <ol>
+        <li>Crack eggs, beat into sugar</li>
+        <li>Beat butter, add to egg/sugar mixture</li>
+        <li>Pour in bowl, place in oven</li>
+    </ol>
+    <!-- 
+        <img> tag with src Attribute
+        Can use width/height HTML Attributes But CSS is better!
+        Use style Attribute for better CSS control.
+        Set a CSS Property/Value separated by ; (semicolon)
+        box-shadow for Drop Shadows: x-offset y-offset blue color
+        BE SURE TO USE ALT ATTRIBUTE FOR SECTION 508 COMPLIANCE
+
+        <figure> + <figcaption> is the right way to add a caption to a picture.
+        Use CSS to style design/alignment/space etc.
+    -->
+    <figure>
+        <img src="images/chocolate-chip-cookies.jpg"
+             alt="Chocolate cookies" title="Tasty cookies"
+             style="width: 200px; height: 150px; box-shadow: 5px 5px 5px red">
+        <figcaption>
+            <strong>A Plate of some tasty chocolate chip cookies.</strong>
+        </figcaption>
+    </figure>
+    <p><a href="#top">Back to Top</a></p>
+
+    <h3 id="recSni">Snickerdoodle</h3>
+    <h4>Ingredients</h4>
+    <ul>
+        <li>Eggs</li>
+        <li>Butter</li>
+        <li>Flour</li>
+        <li>Turbinado Sugar</li>
+    </ul>
+    <h4>Method</h4>
+    <ol>
+        <li>Add sugar and flour together</li>
+        <li>Cream the butter</li>
+        <li>Stir together. Place in oven.</li>
+    </ol>
+    <figure>
+        <img src="images/snickerdoodles.jpg"
+             alt="doodles" title="Snickerdoodles"
+             style="widows: 150px; height: 225px; box-shadow: 0 0 5px blue;">
+    </figure>
+
+    <h4>Nutrional Facts</h4>
+    <!-- A Table with Border of 1 pixel -->
+    <table border="1">
+        <!-- A Table Row -->
+        <tr>
+            <!-- Table Heading for (usually) the first row of a Table -->
+            <th>Calories</th>
+            <th>Sugar</th>
+            <th>Protein</th>
+            <th>Fat</th>
+        </tr>
+        <tr>
+            <!-- Table Data (a Cell). Columns are based on Cells -->
+            <td>100</td>
+            <td>15g</td>
+            <td>3g</td>
+            <td>25g</td>
+        </tr>
+        <tr>
+            <!-- A Cell that span 4 cols -->
+            <td colspan="4">Serving: 2 cookies</td>
+        </tr>
+    </table>
+
+    <p><a href="#top">Back to Top</a></p>
+
+    <h4 id="defs">Definitions</h4>
+    <dl>
+        <dt><em>Tuscan Butter</em></dt>
+        <dd>
+            Rich, creamy butter from the moutains of
+            <a href="https://en.wikipedia.org/wiki/Tuscany" target="_blank">Tuscany</a>.
+        </dd>
+        <dt>Florentine Flour</dt>
+        <dd>
+            Flour, hand-milled, in small batches in Florence.
+        </dd>
+    </dl>
+<p><a href="#top">Back to Top</a></p>
+
+<h2>Contact Us</h2>
+<!-- A feedback Form to collect user Data -->
+<form action="">
+    <!-- 
+        Use Label to 'link' the text to an Input field (its Name)
+        Input Type Text accepts ANY text/number/symbol.
+        Input Type Email only accepts Emails.
+    -->
+    <label for="inputName">Name: </label>
+    <input type="text" name="inputName" size="15"><br>
+    <label for="inputEmail">Email: </label>
+    <input type="email" name="inputEmail" size="15"><br>
+    <input type="submit" value="Go!">
+</form>
+</body>
+<!-- 
+    Name:           Ye Tun Aung
+    Email:          yta.megroup@gmail.com
+    Project:        Cookie Paradise
+    Description:    Look at Links, Images, Tables and Forms
+    Date:           August 06, 2019
+-->
+</html>
