@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>CIS152 - HTML & CSS</title>
+</head>
+<body>
+    <h1 id="top">Cookies Paradise</h1>
+
+    <h2>Recipes</h2>
+    <p><a href="#recCho">Chocolate Chip</a> |
+        <a href="#recSni">Snickerdoodle</a> |
+        <a href="#defs">Definitions</a>
+    </p>
+    
+    <h3 id="recCho">Chocolate Cookies</h3>
+    <h4>Ingredients</h4>
+    <ul>
+        <li>Eggs</li>
+        <li>Tuscan Butter</li>
+        <li>Florentine Flour</li>
+    </ul>
+    <h4>Method</h4>
+    <ol>
+        <li>Crack eggs, beat into sugar</li>
+        <li>Beat butter, add to egg/sugar mixture</li>
+        <li>Pour in bowl, place in oven</li>
+    </ol>
+    <figure>
+        <img src="images/chocolate-chip-cookies.jpg"
+             alt="Chocolate cookies" title="Tasty cookies"
+             style="width: 200px; height: 150px; box-shadow: 5px 5px 5px red">
+        <figcaption>
+            <strong>A Plate of some tasty chocolate chip cookies.</strong>
+        </figcaption>
+    </figure>
+    <p><a href="#top">Back to Top</a></p>
+
+    <h3 id="recSni">Snickerdoodle</h3>
+    <h4>Ingredients</h4>
+    <ul>
+        <li>Eggs</li>
+        <li>Butter</li>
+        <li>Flour</li>
+        <li>Turbinado Sugar</li>
+    </ul>
+    <h4>Method</h4>
+    <ol>
+        <li>Add sugar and flour together</li>
+        <li>Cream the butter</li>
+        <li>Stir together. Place in oven.</li>
+    </ol>
+    <figure>
+        <img src="images/snickerdoodles.jpg"
+             alt="doodles" title="Snickerdoodles"
+             style="widows: 150px; height: 225px; box-shadow: 0 0 5px blue;">
+    </figure>
+
+    <h4>Nutrional Facts</h4>    
+    <table border="1">
+        <tr>
+            <th>Calories</th>
+            <th>Sugar</th>
+            <th>Protein</th>
+            <th>Fat</th>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>15g</td>
+            <td>3g</td>
+            <td>25g</td>
+        </tr>
+        <tr>
+            <td colspan="4">Serving: 2 cookies</td>
+        </tr>
+    </table>
+
+    <p><a href="#top">Back to Top</a></p>
+
+    <h4 id="defs">Definitions</h4>
+    <dl>
+        <dt><em>Tuscan Butter</em></dt>
+        <dd>
+            Rich, creamy butter from the moutains of
+            <a href="https://en.wikipedia.org/wiki/Tuscany" target="_blank">Tuscany</a>.
+        </dd>
+        <dt>Florentine Flour</dt>
+        <dd>
+            Flour, hand-milled, in small batches in Florence.
+        </dd>
+    </dl>
+<p><a href="#top">Back to Top</a></p>
+
+<h2>Contact Us</h2>
+<!-- A feedback Form to collect user Data -->
+<form>
+    <!-- 
+        Use Label to 'link' the text to an Input field (its Name)
+        Input Type Text accepts ANY text/number/symbol.
+        Input Type Email only accepts Emails.
+    -->
+    <fieldset>
+        <legend>Your Info</legend>
+
+        <label for="inputFirstName">First Name: </label>
+        <input type="text" placeholder="Ye Tun" name="inputFirstName" id="inputFirstName"><br>
+        
+        <label for="inputLastName">Last Name: </label>
+        <input type="text" placeholder="Aung" name="inputLastName" id="inputLastName"><br>
+        
+        <label for="inputEmail">Email: </label>
+        <input type="email" name="inputEmail" size="15"><br>
+    </fieldset><br>
+    
+    <label for="inputFeedback">Feedback: </label>
+    <textarea required="required" name="inputFeedback">Enter your comments</textarea><br><br>
+
+    <fieldset>
+        <label for="recipeAsk">Would you like a free recipe PDF?</label><br>
+        <input type="radio" name="recipeAsk" value="yes">Yes <br>
+        <input type="radio" name="recipeAsk" value="no">No <br>
+
+        <label for="recipeType">Which recipes?</label><br>
+        <input type="checkbox" name="recipeType" value="classic">Classic <br>
+        <input type="checkbox" name="recipeType" value="chocolate">Chocolate <br>
+        <input type="checkbox" name="recipeType" value="party">Party <br>
+    </fieldset><br>
+
+    <label for="inputState">Pick your state</label><br>
+    <select name="inputState">
+        <option value="noState">-- Select --</option>
+        <option value="ca">California</option>
+        <option value="ny">New York</option>
+        <option value="hi">Hawai'i</option>
+        <option value="or">Oregon</option>
+        <option value="de">Delware</option>
+    </select><br><br>
+
+    <label for="inputQuantity">Pick Quantity (ctrl+ click)</label><br>
+    <select name="inputQuantity" multiple="multiple">
+        <option value="halfDoz">Half Dozen</option>
+        <option value="oneDoz">One Dozen</option>
+        <option value="twoDoz">Two Dozen</option>
+    </select><br>
+
+    <input type="reset" value="Reset"><br>
+    <input type="submit" id="btnGo" value="Go!">
+</form>
+
+<!-- JavaScript code below. #ProTip: Add it before end of the body -->
+<script>
+    // This is a JavaScript Single-Line comment
+    /* 
+        This is a Multi-Line comment in JavaScript.
+        It's more than one line.
+    */
+    // A function is a collection of JS command
+    function fnButtonGo() {
+        var varLastName = document.getElementById("inputLastName").value;
+        var varFirstName = document.getElementById("inputFirstName").value;
+        // Built in JS command (Method) for a pop-up message.
+        alert("Hello " + varFirstName + " " + varLastName);
+    }
+
+    // Create a variable (a container) with a reference to an HTML node;
+    // finding it by its ID Attribute.
+    var elBtnGo = document.getElementById("btnGo");
+    
+    // Set up Event Listener (waiting for something) to fire on a CLICK Event.
+    // Then call the fnButtonGo() function.
+    elBtnGo.addEventListener("click", fnButtonGo);
+</script>
+</body>
+<!-- 
+    Name:           Ye Tun Aung
+    Email:          yta.megroup@gmail.com
+    Project:        Cookie Paradise
+    Description:    A website all about cookies
+    Date:           August 07, 2019
+-->
+</html>
