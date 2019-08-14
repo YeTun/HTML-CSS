@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="My list of the best and worst movies.">
+    <meta name="author" content="Ye Tun Aung">
+    <title>CIS152 - HTML & CSS</title>
+    <!--
+            A CSS Style block. Consolidate all your CSS rules here.
+            This is known as Embeded CSS. Better than Inline.
+    -->
+    <style>
+        /* Use this kind of comment tag to create comments. Like JS. */
+        /* . for CLASSES */
+        .h2Style {
+            background-color: pink;
+            color: brown;
+        }
+    
+        .pStyle {
+            background-color: blue;
+            color: white;
+            width: 300px;
+        }
+    
+        #goodMovies {
+            background-color: azure;
+        }
+    
+        #badMovies {
+            background-color: #446644;
+        }
+    
+        .sw {
+            background-color: brown;
+            color: pink;
+        }
+    
+        footer p {
+            color: red;
+            float: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="goodMovies">
+        <h1>My Top 5 Favorite Movies</h1>
+        <p>
+            This is a list of my favorite movies. I like them because ...<br />
+            <nav>
+                <a href="#movie5">#5</a> | <a href="#movie4">#4</a> |
+                <a href="#movie3">#3</a> | <a href="#movie2">#2</a> |
+                <a href="#movie1">#1</a>
+            </nav>
+        </p>
+
+        <h2 id="movie5" class="h2Style">5. Sunset Boulevard</h2>
+        <p class="pStyle">
+            A classic movie about how Hollywood chews you up and spits you out.
+        </p>
+
+        <h2 id="movie4" class="h2Style">4. The Three Stooges Meet Snow White and the Seven Dwarves</h2>
+        <p class="pStyle">
+            Larry, Moe, and Curly Joe meet Snow White. A classic comedy.
+        </p>
+
+        <h2 id="movie3" class="h2Style">3. Army of Darkness</h2>
+        <p class="pStyle">
+            Ash fights an army of Deadites in Medieval times.
+        </p>
+        
+        <p>
+            <iframe src="https://en.m.wikipedia.org/wiki/Army_of_Darkness" width="640" height="480"></iframe>
+        </p>
+
+        <h2 id="movie2" class="h2Style">2. Halloween</h2>
+        <p class="pStyle">
+            Michael Meyers kills everyone in Haddonfield.
+        </p>
+        
+        <p>
+            <iframe width="560" height="315" src="https://youtube.com/embed/xHuOtLTQ_1I"></iframe>
+        </p>
+
+        <h2 id="movie1" class="h2Style">1.<span class="sw"> Star Wars</span>: A New Hope</h2>
+        <p class="pStyle">
+            Luke Skywalker saves the galaxy.
+        </p>
+    </div>
+
+    <div id="badMovies">
+        <h1>My Bottom 3 Least Favorite Movies</h1>
+        <p>These are the movies that you SHOULD NOT WATCH!</p>
+
+        <h2>3. Titanic</h2>
+        <p>The boat sinks. The end.</p>
+
+        <h2>2. Abbot & Costello Meat Dracula</h2>
+        <p>WTH</p>
+
+        <h2>1.<span class="sw"> Star Wars</span> the Force Awakens</h2>
+        <p>It felt like I was watching the other movies, instead.</p>
+    </div>
+
+    <div>
+        <a href="https://soundcloud.com/vmcampos" target="_blank" rel="noopener noreferrer">Sound Cloud</a>
+        <p>Let's enter the Arena Podcast</p>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/663367862&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    </div>
+
+    <footer>
+        <p>Copyright &#169; 2019 ME Computer. Made for &hearts;!</p>
+    </footer>    
+</body>
+<!-- 
+    Name:           Ye Tun Aung
+    Email:          yta.megroup@gmail.com
+    Project:        Wraping up the HTML section
+    Description:    Chapter 8 and 9
+    Date:           August 14, 2019
+-->
+</html>
